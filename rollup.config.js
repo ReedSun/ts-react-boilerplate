@@ -1,7 +1,6 @@
 import { chromeExtension, simpleReloader } from 'rollup-plugin-chrome-extension';
 import commonjs from '@rollup/plugin-commonjs';
 import { emptyDir } from 'rollup-plugin-empty-dir';
-import eslint from '@rollup/plugin-eslint';
 import path from 'path';
 import replace from '@rollup/plugin-replace';
 import resolve from '@rollup/plugin-node-resolve';
@@ -18,7 +17,6 @@ export default {
     format: 'esm',
   },
   plugins: [
-    eslint(),
     replace({
       preventAssignment: true,
       'process.env.NODE_ENV': isProduction
