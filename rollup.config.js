@@ -11,7 +11,7 @@ import zip from 'rollup-plugin-zip';
 const isProduction = process.env.NODE_ENV === 'production';
 
 export default {
-  input: 'src/manifest.json',
+  input: 'src/manifest.ts',
   output: {
     chunkFileNames: path.join('chunks', '[name]-[hash].js'),
     dir: 'dist',
