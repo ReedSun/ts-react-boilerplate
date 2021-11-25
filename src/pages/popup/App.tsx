@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const App = (): JSX.Element => {
   return (
@@ -6,7 +6,7 @@ const App = (): JSX.Element => {
       <h1>Popup Page</h1>
       <p>If you are seeing this, React is working!</p>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
