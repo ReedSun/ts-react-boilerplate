@@ -19,7 +19,7 @@ Follow the prompts to setup your Chrome extension project.
 Type this into your terminal:
 
 ```sh
-git clone https://github.com/extend-chrome/ts-react-boilerplate.git my-chrome-extension
+git clone https://github.com/reedsun/ts-react-boilerplate.git my-chrome-extension
 cd my-chrome-extension
 npm install
 ```

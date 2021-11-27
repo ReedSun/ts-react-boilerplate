@@ -1,5 +1,5 @@
 {
-  "name": "@extend-chrome/ts-react-boilerplate",
+  "name": "@reedsun/ts-react-boilerplate",
   "version": "1.0.0",
   "private": true,
   "description": "Chrome extension boilerplate with TypeScript and React",
@@ -11,16 +11,16 @@
     "rollup",
     "boilerplate"
   ],
-  "homepage": "https://github.com/extend-chrome/ts-react-boilerplate#readme",
+  "homepage": "https://github.com/ReedSun/ts-react-boilerplate#readme",
   "bugs": {
-    "url": "https://github.com/extend-chrome/ts-react-boilerplate/issues"
+    "url": "https://github.com/ReedSun/ts-react-boilerplate/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/extend-chrome/ts-react-boilerplate.git"
+    "url": "git+https://github.com/ReedSun/ts-react-boilerplate"
   },
   "license": "MIT",
-  "author": "Jack Steam<jacksteamdev@gmail.com>",
+  "author": "Jack Steam<jacksteamdev@gmail.com>, ReedSun<superreedsun@gmail.com>",
   "scripts": {
     "build": "rollup -c",
     "release": "cross-env NODE_ENV=production rollup -c",
