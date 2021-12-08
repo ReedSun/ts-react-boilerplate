@@ -4,6 +4,7 @@ import { emptyDir } from 'rollup-plugin-empty-dir';
 import path from 'path';
 import replace from '@rollup/plugin-replace';
 import resolve from '@rollup/plugin-node-resolve';
+import { terser } from 'rollup-plugin-terser';
 import typescript from '@rollup/plugin-typescript';
 import zip from 'rollup-plugin-zip';
 
@@ -31,6 +32,7 @@ export default {
     typescript(),
     // Empties the output dir before a new build
     emptyDir(),
+    isProduction && terser(),
     // Outputs a zip file in ./releases
     isProduction && zip({ dir: 'releases' }),
   ],
