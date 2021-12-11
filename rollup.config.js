@@ -24,11 +24,11 @@ export default {
         ? JSON.stringify('production')
         : JSON.stringify('development'),
     }),
-    chromeExtension(),
+    chromeExtension({ wrapContentScripts: false }),
     // Adds a Chrome extension reloader during watch mode
     simpleReloader(),
     resolve(),
-    commonjs(),
+    commonjs({ exclude: 'src/content_scripts/**/*' }),
     typescript(),
     // Empties the output dir before a new build
     emptyDir(),

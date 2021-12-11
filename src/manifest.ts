@@ -7,10 +7,15 @@ const manifest: ManifestV3 = {
   },
   content_scripts: [
     {
-      js: ['content_scripts.ts'],
-      matches: ['https://*.example.com/*'],
+      css: ['content_script.css'],
+      js: ['content_script.ts'],
+      matches: ['*://*.baidu.com/*'],
     },
-  ],
+  ].map(({ css = [], js, matches }) => ({
+    css: css.map((path) => `content_scripts/${path}`),
+    js: js.map((path) => `content_scripts/${path}`),
+    matches,
+  })),
   manifest_version: 3,
 };
 

@@ -21,8 +21,8 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'typescript-sort-keys'],
   rules: {
-    'max-lines': ['error', { skipBlankLines: true, skipComments: true }],
-    'max-lines-per-function': ['error', { skipBlankLines: true, skipComments: true }],
+    'max-lines': [2, { skipBlankLines: true, skipComments: true }],
+    'max-lines-per-function': 2,
     'no-alert': 1,
     'no-console': 1,
     'no-debugger': 1,
@@ -31,7 +31,7 @@ module.exports = {
     'prefer-template': 2,
     'sort-imports': 2,
     'sort-keys': 2,
-    'typescript-sort-keys/interface': 'error',
-    'typescript-sort-keys/string-enum': 'error',
+    'typescript-sort-keys/interface': 2,
+    'typescript-sort-keys/string-enum': 2,
   },
 };
